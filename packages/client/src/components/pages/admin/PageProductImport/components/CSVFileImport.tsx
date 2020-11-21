@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {makeStyles} from '@material-ui/core/styles';
-import Typography from "@material-ui/core/Typography";
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
@@ -11,18 +11,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 type CSVFileImportProps = {
-  url: string,
-  title: string
+  url: string;
+  title: string;
 };
 
-export default function CSVFileImport({url, title}: CSVFileImportProps) {
+export default function CSVFileImport({ url, title }: CSVFileImportProps) {
   const classes = useStyles();
   const [file, setFile] = useState<any>();
 
   const onFileChange = (e: any) => {
     console.log(e);
-    let files = e.target.files || e.dataTransfer.files
-    if (!files.length) return
+    let files = e.target.files || e.dataTransfer.files;
+    if (!files.length) return;
     setFile(files.item(0));
   };
 
@@ -56,7 +56,7 @@ export default function CSVFileImport({url, title}: CSVFileImportProps) {
         {title}
       </Typography>
       {!file ? (
-          <input type="file" onChange={onFileChange}/>
+        <input type="file" onChange={onFileChange} />
       ) : (
         <div>
           <button onClick={removeFile}>Remove file</button>
