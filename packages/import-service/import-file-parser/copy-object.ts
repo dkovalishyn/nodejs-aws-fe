@@ -1,5 +1,5 @@
 import { BUCKET } from '../bucket';
-import S3 from 'aws-sdk/clients/S3';
+import S3 from 'aws-sdk/clients/s3';
 
 export const copyObject = async (
   filename: string,
