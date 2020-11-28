@@ -1,4 +1,4 @@
-import S3 from 'aws-sdk/clients/S3';
+import S3 from 'aws-sdk/clients/s3';
 import { BUCKET } from '../bucket';
 
 export const deleteObject = async (filename: string) => {
