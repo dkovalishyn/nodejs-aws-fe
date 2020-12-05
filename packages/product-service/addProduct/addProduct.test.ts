@@ -14,7 +14,7 @@ describe('addProduct', () => {
     expect(response).toEqual({
       statusCode: 400,
       body: 'Bad request',
-      header: cors,
+      headers: cors,
     });
   });
 
@@ -48,8 +48,8 @@ describe('addProduct', () => {
 
     expect(response).toEqual({
       statusCode: 201,
-      header: cors,
-      body: 'Created',
+      headers: cors,
+      body: JSON.stringify({ id: '1' }),
     });
   });
 
