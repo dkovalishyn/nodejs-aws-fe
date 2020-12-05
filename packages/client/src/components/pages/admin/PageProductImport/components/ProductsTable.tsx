@@ -16,14 +16,14 @@ export default function ProductsTable() {
   const [products, setProducts] = useState<any>([]);
 
   useEffect(() => {
-    axios.get(`${API_PATHS.bff}/products`)
+    axios.get(`${API_PATHS.bff}/product`)
       .then(res => setProducts(res.data));
   }, []);
 
   const onDelete = (id: string) => {
-    axios.delete(`${API_PATHS.bff}/products/${id}`)
+    axios.delete(`${API_PATHS.bff}/product/${id}`)
       .then(() => {
-        axios.get(`${API_PATHS.bff}/products`)
+        axios.get(`${API_PATHS.bff}/product`)
           .then(res => setProducts(res.data));
         }
       );
