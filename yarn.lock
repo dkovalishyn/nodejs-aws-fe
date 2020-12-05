@@ -11238,6 +11238,11 @@ serverless-plugin-monorepo@^0.9.0:
   dependencies:
     fs-extra "^7.0.0"
 
+serverless-pseudo-parameters@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/serverless-pseudo-parameters/-/serverless-pseudo-parameters-2.5.0.tgz#f30bf34db166e4b8b22144a8e65aca71b90dd1e6"
+  integrity sha512-A/O49AR8LL6jlnPSmnOTYgL1KqVgskeRla4sVDeS/r5dHFJlwOU5MgFilc7aaQP8NWAwRJANaIS9oiSE3I+VUA==
+
 "serverless-single-page-app-plugin@file:./packages/client/serverless-single-page-app-plugin":
   version "1.0.1"
 
