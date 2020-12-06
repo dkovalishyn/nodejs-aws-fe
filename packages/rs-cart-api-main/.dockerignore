@@ -10,5 +10,3 @@ scripts
 
 .gitignore
 .dockerignore
-Dockerfile
-
